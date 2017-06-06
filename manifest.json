@@ -1,0 +1,7 @@
+{
+  "name": "unifChat",
+  "short_name": "unifChat",
+  "description": "ALL THE CHATS",
+  "start_url": "/",
+  "display": "standalone"
+}
