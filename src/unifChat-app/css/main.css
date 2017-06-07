@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  background: #8c8c8c;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 15px;
+}
+
+#mainContainer {
+  display: table;
+  margin: auto;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  border-color: black;
+
+}
+
+#story {
+  display: block;
+  list-style: none;
+  margin: auto;
+  text-align: center;
+
+}
+
+#storyLabel {
+  margin-left: 15px;
+  font-family: 'Roboto';
+  font-weight: lighter;
+}
+
+#twitterContainer {
+
+}

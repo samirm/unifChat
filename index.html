@@ -9,12 +9,39 @@
 
     <!-- See https://goo.gl/OOhYW5 -->
     <link rel="manifest" href="/manifest.json">
+    <link rel="stylesheet" type="text/css" href="src/unifChat-app/css/main.css" />
 
     <script src="/bower_components/webcomponentsjs/webcomponents-loader.js"></script>
 
     <link rel="import" href="/src/unifChat-app/unifChat-app.html">
   </head>
   <body>
+    <!-- begin fb jdk  -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    <!-- end fb jdk     -->
+
+    <!-- below is a random custom element. ....ehhhhhh -->
     <unifChat-app></unifChat-app>
+    <div id="mainContainer">
+      <h2 id="storyLabel">Story</h2>
+      <ul id="story">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+      <div id="twitterContainer">
+        <a class="twitter-timeline" href="https://twitter.com/neiltyson" data-height="300"> Tweets by neiltyson</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+      <div class="fb-post" data-href="https://www.facebook.com/20531316728/posts/10154009990506729/" data-show-text="true"><blockquote cite="https://www.facebook.com/20531316728/posts/10154009990506729/" class="fb-xfbml-parse-ignore">Posted by <a href="https://www.facebook.com/facebook/">Facebook</a> on&nbsp;<a href="https://www.facebook.com/20531316728/posts/10154009990506729/">Thursday, August 27, 2015</a></blockquote></div>
+    </div>
   </body>
 </html>
